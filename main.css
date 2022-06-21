@@ -20,7 +20,7 @@ body {
   height: 100%;
   /* font-family: kalimati; */
   font-family: kokila;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 .letter_wrap .letter_inner {
   border: 1px solid #eee;
@@ -69,16 +69,7 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
-}
-.letter_wrap .letter_inner .letter_header .letter_title h2 {
-  font-size: 1.2rem;
-}
-.letter_wrap .letter_inner .letter_header .letter_title h1 {
-  font-size: 1.5rem;
-}
-.letter_wrap .letter_inner .letter_header .letter_title h3 {
-  font-size: 1rem;
+  line-height: 1.1;
 }
 .letter_wrap .letter_inner .letter_header .letter_title .letter_type {
   margin-top: 40px;
