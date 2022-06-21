@@ -11,16 +11,18 @@
   font-family: kokila;
   src: url(kokila.ttf);
 }
-body {
-  font-family: sans-serif;
-}
+
 /* Letter wrap  */
 .letter_wrap {
   width: 100%;
   height: 100%;
-  /* font-family: kalimati; */
   font-family: kokila;
-  /* font-size: 1rem; */
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.letter_wrap p {
+  margin-bottom: 2px;
+  line-height: 1.5rem;
 }
 .letter_wrap .letter_inner {
   border: 1px solid #eee;
@@ -29,12 +31,13 @@ body {
   height: 100%;
   position: relative;
 }
+/* Print Button */
 .letter_wrap .letter_inner #print_btn {
   position: absolute;
   right: 8px;
   top: 8px;
   padding: 4px 14px;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   border: 1px solid #c9c9c9;
   color: #777;
   cursor: pointer;
@@ -49,7 +52,8 @@ body {
   width: 110px;
 }
 .letter_wrap .letter_inner .letter_header .letter_number_detail {
-  margin-top: 20px;
+  margin-top: 15px;
+  line-height: 1.2rem;
 }
 .letter_wrap .letter_inner .letter_header .letter_title {
   position: absolute;
@@ -71,9 +75,17 @@ body {
   padding: 0;
   line-height: 1.1;
 }
+.letter_wrap .letter_inner .letter_header .letter_title h1 {
+  font-size: 2rem;
+}
+.letter_wrap .letter_inner .letter_header .letter_title h2 {
+  font-size: 1.6rem;
+}
+.letter_wrap .letter_inner .letter_header .letter_title h3 {
+  font-size: 1.4rem;
+}
 .letter_wrap .letter_inner .letter_header .letter_title .letter_type {
-  margin-top: 40px;
-  font-size: 1rem;
+  margin-top: 30px;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -93,8 +105,7 @@ body {
   font-weight: 600;
   left: 50%;
   top: 0;
-  font-size: 1rem;
-  margin-top: 40px;
+  margin-top: 20px;
   display: inline-block;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -103,7 +114,7 @@ body {
   -o-transform: translateX(-50%);
 }
 .letter_wrap .letter_inner .letter_body {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .letter_wrap .letter_inner .letter_body .letter_greeting {
   margin-bottom: 2px;
@@ -115,6 +126,7 @@ body {
 /* Table  */
 .letter_wrap .letter_inner .letter_body .letter_table {
   width: 100%;
+  margin: 0px;
 }
 .letter_wrap .letter_inner .letter_body .letter_table td {
   border: 1px solid #838383;
@@ -140,14 +152,13 @@ body {
   text-align: center;
 }
 .letter_footer .letter_sign .sign_title {
-  margin-bottom: 6px;
-  font-size: 0.9rem;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .letter_footer .letter_sign select {
   width: 100%;
-  padding: 2px;
+  padding: 1px 10px;
   border: 1px solid #a2a1a1;
   border-radius: 0px !important;
   text-align: center;
@@ -156,6 +167,7 @@ body {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   outline-offset: -1px;
+  font-size: 1.1rem;
 }
 
 /* For default browser setting */
@@ -172,13 +184,16 @@ select:not([multiple]) {
 }
 
 .letter_footer .letter_sign .post {
-  margin-top: 6px;
+  font-size: 1.1rem;
 }
 
 /* Print Letter */
 #print_letter .letter_inner {
   border: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0px;
+  padding: 0px;
 }
 #print_letter table.letter_table td {
   padding: 0.1em 0.2em !important;
@@ -200,4 +215,5 @@ select:not([multiple]) {
 #print_letter .letter_footer .letter_sign .post {
   margin: 0px;
   padding: 0px;
+  line-height: 1.3rem;
 }
