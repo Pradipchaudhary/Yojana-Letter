@@ -192,6 +192,7 @@ select:not([multiple]) {
 }
 #print_letter .letter_footer .letter_sign {
   width: auto;
+  min-width: auto;
 }
 #print_letter .letter_footer .letter_sign .sign_title {
   line-height: 1.4;
