@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: kalimati;
+  src: url(Kalimati.otf);
+}
+body {
+  font-family: sans-serif;
+}
+/* Letter wrap  */
+.letter_wrap {
+  width: 100%;
+  height: 100%;
+  font-family: kalimati;
+  font-size: 1rem;
+}
+.letter_wrap .letter_inner {
+  border: 1px solid #eee;
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+.letter_wrap .letter_inner button#print_btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 2px 14px;
+  font-size: 0.9rem;
+  border: 1px solid #c9c9c9;
+  color: #777;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.letter_wrap .letter_inner .letter_header {
+  position: relative;
+}
+.letter_wrap .letter_inner .letter_header img.letter_logo {
+  width: 110px;
+}
+.letter_wrap .letter_inner .letter_header .letter_number_detail {
+  margin-top: 20px;
+}
+.letter_wrap .letter_inner .letter_header .letter_title {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 50%;
+  line-height: 2rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.letter_wrap .letter_inner .letter_header .letter_title h1,
+.letter_wrap .letter_inner .letter_header .letter_title h2,
+.letter_wrap .letter_inner .letter_header .letter_title h3 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.letter_wrap .letter_inner .letter_header .letter_title h2 {
+  font-size: 1.2rem;
+}
+.letter_wrap .letter_inner .letter_header .letter_title h1 {
+  font-size: 1.5rem;
+}
+.letter_wrap .letter_inner .letter_header .letter_title h3 {
+  font-size: 1rem;
+}
+.letter_wrap .letter_inner .letter_header .letter_title .letter_type {
+  margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.letter_wrap .letter_inner .letter_header .letter_date {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 60%;
+}
+.letter_wrap .letter_inner .letter_header .letter_date input[type="date"] {
+  border: 1px solid #eee;
+  padding: 4px;
+  outline: none;
+}
+.letter_wrap .letter_inner .letter_subject {
+  position: relative;
+  font-weight: 600;
+  left: 50%;
+  top: 0;
+  font-size: 1rem;
+  margin-top: 40px;
+  display: inline-block;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.letter_wrap .letter_inner .letter_body {
+  margin-top: 30px;
+}
+.letter_wrap .letter_inner .letter_body .letter_greeting {
+  margin-bottom: 2px;
+}
+.letter_wrap .letter_inner .letter_body p.letter_text {
+  text-indent: 2.8rem;
+  text-align: justify;
+}
+/* Table  */
+.letter_wrap .letter_inner .letter_body .letter_table {
+  width: 100%;
+}
+.letter_wrap .letter_inner .letter_body .letter_table td {
+  border: 1px solid #838383;
+}
+.letter_wrap .letter_inner .letter_body .letter_table tr td:first-child {
+  width: 50%;
+  text-align: right;
+  /* padding: 0.1em 0.2em !important; */
+}
+/* .letter_wrap .letter_inner .letter_body .letter_table tr td:nth-child(2){
+  font-weight: bold;
+} */
+.letter_wrap .letter_inner .letter_body .letter_table tr td + td {
+  font-weight: 600;
+  /* font-size: 0.87rem; */
+  /* padding: 0.1em 0.2em !important; */
+}
+
+/* Letter Fotter  */
+.letter_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.letter_footer .letter_sign {
+  /* background: red; */
+  padding: 10px;
+  min-width: 260px;
+  text-align: center;
+  /* font-weight: 600; */
+}
+.letter_footer .letter_sign .sign_title {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.letter_footer .letter_sign select {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #a2a1a1;
+  border-radius: 0px !important;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  outline-offset: -1px;
+}
+
+/* For default browser setting */
+select:not([multiple]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.5em;
+  padding-right: 1.5em;
+}
+/* .letter_footer .letter_sign option {
+} */
+.letter_footer .letter_sign select:focus {
+  border: 1px solid #838383;
+  outline: none;
+}
+
+.letter_footer .letter_sign .post {
+  margin-top: 6px;
+}
+
+/* Print Letter */
+#print_letter .letter_inner {
+  border: none;
+  font-size: 0.9rem;
+}
+#print_letter table.letter_table td {
+  padding: 0.1em 0.2em !important;
+}
+#print_letter table.letter_table tr td + td {
+  font-weight: 400;
+}
+#print_letter .letter_footer .letter_sign {
+  width: auto;
+}
+#print_letter .letter_footer .letter_sign .sign_title {
+  line-height: 1.4;
+  border-top: 1px dashed #777;
+  padding-top: 5px;
+}
+
+#print_letter .letter_footer .letter_sign .sign_name,
+#print_letter .letter_footer .letter_sign .post {
+  margin: 0px;
+  padding: 0px;
+}
