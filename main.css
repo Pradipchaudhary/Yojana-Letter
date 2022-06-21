@@ -126,15 +126,10 @@ body {
 .letter_wrap .letter_inner .letter_body .letter_table tr td:first-child {
   width: 50%;
   text-align: right;
-  /* padding: 0.1em 0.2em !important; */
 }
-/* .letter_wrap .letter_inner .letter_body .letter_table tr td:nth-child(2){
-  font-weight: bold;
-} */
+
 .letter_wrap .letter_inner .letter_body .letter_table tr td + td {
   font-weight: 600;
-  /* font-size: 0.87rem; */
-  /* padding: 0.1em 0.2em !important; */
 }
 
 /* Letter Fotter  */
@@ -144,11 +139,9 @@ body {
   margin-top: 40px;
 }
 .letter_footer .letter_sign {
-  /* background: red; */
   padding: 10px;
   min-width: 260px;
   text-align: center;
-  /* font-weight: 600; */
 }
 .letter_footer .letter_sign .sign_title {
   margin-bottom: 6px;
@@ -176,8 +169,7 @@ select:not([multiple]) {
   padding: 0.5em;
   padding-right: 1.5em;
 }
-/* .letter_footer .letter_sign option {
-} */
+
 .letter_footer .letter_sign select:focus {
   border: 1px solid #838383;
   outline: none;
